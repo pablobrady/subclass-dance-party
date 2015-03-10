@@ -12,14 +12,8 @@ BlinkyDancer.prototype = Object.create(Dancer.prototype);
 BlinkyDancer.prototype.constructor = BlinkyDancer;
 
 BlinkyDancer.prototype.step = function(){
-  console.log("BlinkyDancer step!");
-
-
-  console.log("Toggling... " + this);
   this.$node.toggle();
   Dancer.prototype.step.apply(this); // Call Dancer's step();  
-  //setInterval(this.step.bind(this), 1000);
-  console.log("Toggling... end.");
 };
 
 
