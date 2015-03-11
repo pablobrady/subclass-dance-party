@@ -17,9 +17,9 @@ $(document).ready(function(){
      */
     var dancerMakerFunctionName = $(this).data("dancer-maker-function-name");
 
+
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
-
     // make a dancer with a random position
 
     var dancer = dancerMakerFunction(
@@ -29,6 +29,22 @@ $(document).ready(function(){
     );
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
+
+    // Check for nearby/collision
+    // for (var i = 0; i < window.dancers.length; i++) {
+    //     var dancerTemp = (window.dancers[i]);
+    //     var x = danceTemp
+    //     dancer.lineUp();
+    //   };
+  });
+
+
+
+  $(".lineUpButton").on("click", function(event){
+
+      for (var i = 0; i < window.dancers.length; i++) {
+        dancer = (window.dancers[i]);
+        dancer.lineUp();
+      };
   });
 });
-

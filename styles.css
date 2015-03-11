@@ -1,5 +1,7 @@
 body, html{
   height:100%;
+  background-image: url(https://patricia1957.files.wordpress.com/2012/03/kusama_photocredit-lucy-dawkins_tate-photography_0261.jpg);
+  background-size: contain;
 }
 body{
   margin: 0px;
@@ -8,8 +10,8 @@ body{
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
-}
-.title, .addDancerButton{
+}e
+.title, .addDancerButton, .lineUpButton {
   padding:5px 12px;
   float:right;
 }
@@ -21,11 +23,17 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border:10px solid yellow;
   border-radius:10px;
   position:absolute;
 }
 
 .bubbleDancer{
-  border:10px solid black;
+  border:20px solid lightblue;
+}
+
+.spinDancer{
+  width: 20px;
+  height:40px;
+  border:30px solid black;
 }
